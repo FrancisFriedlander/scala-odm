@@ -1,0 +1,4 @@
+#Sat Apr 22 14:37:43 CEST 2017
+ruleset.uuid=c0930664-6c63-43e6-947e-de0be80ad367
+ruleset.engine=de
+ruleset.engine.version=1.40.3

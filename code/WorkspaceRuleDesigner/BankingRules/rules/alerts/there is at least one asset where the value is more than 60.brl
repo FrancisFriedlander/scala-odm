@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>there is at least one asset where the value is more than 60</name>
+  <uuid>6bdb0b56-bb9e-4d3f-9c54-b9c2ba4fd597</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set 'the customer owning assets' to a customer owning assets from 'the customer' ;
+if
+    there is at least one asset in the assets of 'the customer owning assets'
+            where the value of this asset is more than 60 ,
+then
+    add the name of this rule to the alerts of 'the customer' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>the total balance is less than -10</name>
+  <uuid>7ad7bc16-3378-459c-af2f-ed0420e23198</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    the total balance of 'the customer' is less than -10
+then
+    add the name of this rule to the alerts of 'the customer' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

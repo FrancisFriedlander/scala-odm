@@ -1,0 +1,40 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/BankingRules//Users/francisfriedlander/WorkspaceFF/projects/RS/scala_odm/code/shared/lib/BankingScalaXom.jar"
+property uuid "ae0969ee-6c72-4d94-b683-0aee183d1a3b"
+package banking_scala_xom;
+
+
+public class Asset
+{
+    public Asset(int arg);
+    public int value();
+    public void value_$eq(int arg);
+}
+
+public interface AssetOwner
+{
+    public banking_scala_xom.Asset[] assets();
+    public void assets_$eq(banking_scala_xom.Asset[] arg);
+    public int sumAssetValues();
+}
+
+public class Customer
+{
+    public Customer(int arg);
+    public void addAlert(string arg);
+    public void clearAlerts();
+    public int totalBalance();
+}
+
+public class CustomerOwningAssets
+        extends banking_scala_xom.Customer
+        implements banking_scala_xom.AssetOwner
+{
+    public CustomerOwningAssets(int arg1, banking_scala_xom.Asset[] arg2);
+    public banking_scala_xom.Asset[] assets();
+    public void assets_$eq(banking_scala_xom.Asset[] arg);
+    public int sumAssetValues();
+    public int totalBalance();
+}
+

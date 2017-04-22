@@ -1,0 +1,20 @@
+# Vocabulary Properties
+uuid = bc18b7a3-f4b8-40cc-9783-4fe6f5f7e8bf
+
+# banking_scala_xom.Asset
+banking_scala_xom.Asset#concept.label = asset
+banking_scala_xom.Asset.value()#phrase.navigation = the value of {this}
+
+# banking_scala_xom.AssetOwner
+banking_scala_xom.AssetOwner#concept.label = asset owner
+banking_scala_xom.AssetOwner.assets()#phrase.navigation = the assets of {this}
+banking_scala_xom.AssetOwner.sumAssetValues()#phrase.navigation = the sum of the asset values of {this}
+
+# banking_scala_xom.Customer
+banking_scala_xom.Customer#concept.label = customer
+banking_scala_xom.Customer.addAlert(java.lang.String)#phrase.action = add {0} to the alerts of {this}
+banking_scala_xom.Customer.clearAlerts()#phrase.action = clear the alerts of {this}
+banking_scala_xom.Customer.totalBalance()#phrase.navigation = the total balance of {this}
+
+# banking_scala_xom.CustomerOwningAssets
+banking_scala_xom.CustomerOwningAssets#concept.label = customer owning assets

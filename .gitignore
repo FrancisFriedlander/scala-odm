@@ -1,0 +1,16 @@
+# General
+*.DS_Store
+
+# Code
+*.metadata
+*.class
+
+# Rule Designer workspace
+code/WorkspaceRuleDesigner/Libraries/lib/org.scala-lang.*.jar
+code/WorkspaceRuleDesigner/BankingRules/output/*
+code/WorkspaceRuleDesigner/BankingRules/reports/*
+code/WorkspaceRuleDesigner/BankingRules/resources/*
+
+# Documentation
+# https://www.gitignore.io/api/microsoftoffice
+~$*.doc*
